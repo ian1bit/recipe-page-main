@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 
-ul, li {
+ul > li {
     list-style: none;
 }
 
@@ -58,6 +58,13 @@ body {
     background: var(--white);
 }
 
+.title-of-section {
+    font-family: var(--young-serif);
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--nutmeg);
+}
+
 /* sessão principal */
 
 .receita-info img {
@@ -66,7 +73,7 @@ body {
 
 .titulo-da-receita {
     font-family: var(--young-serif);
-    font-weight: 400;
+    font-weight: 600;
     font-size: 3rem;
     margin: 40px 0;
     color: var(--dark-charcoal);
@@ -107,5 +114,31 @@ body {
 }
 
 .tempo-de-preparacao-info ul li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+/* sessão ingredientes */
+
+.ingredientes {
+    margin: 40px 0;
+}
+
+.ingredientes h2 {
+    margin-bottom: 20px;
+}
+
+.ingredientes ul li {
+    font-family: var(--outfit);
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: var(--wenge-brown);
+}
+
+.ingredientes ul li::before {
+    content: '•';
+    margin: 0 30px 0 10px;
+}
+
+.ingredientes ul li:not(:last-child) {
     margin-bottom: 15px;
 }
