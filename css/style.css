@@ -124,7 +124,7 @@ body {
 }
 
 .ingredientes h2 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .ingredientes ul li {
@@ -140,5 +140,28 @@ body {
 }
 
 .ingredientes ul li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+/* sessão de instruções */
+
+.intrucoes {
+    border-top: 1px solid var(--light-grey);
+    border-bottom : 1px solid var(--light-grey);
+    padding: 40px 0;
+}
+
+.intrucoes h2 {
+    margin-bottom: 30px;
+}
+
+.intrucoes ol li {
+    font-family: var(--outfit);
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: var(--wenge-brown);
+}
+
+.intrucoes ol li:not(:last-child) {
     margin-bottom: 15px;
 }
