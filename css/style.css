@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 
-ul > li {
+ul, ol, li {
     list-style: none;
 }
 
@@ -160,8 +160,62 @@ body {
     font-weight: 400;
     font-size: 1.25rem;
     color: var(--wenge-brown);
+    counter-increment: li;
+}
+
+.intrucoes ol li::before {
+    content: counter(li)'.';
+    font-family: var(--outfit);
+    font-weight: 600;
+    color: var(--nutmeg);
+    margin: 0 30px 0 10px;
 }
 
 .intrucoes ol li:not(:last-child) {
     margin-bottom: 15px;
+}
+
+/* sessão de nutrição */
+
+.nutricao {
+    margin-top: 30px;
+}
+
+.nutricao h2 {
+    margin: 30px 0;
+}
+
+.nutricao table {
+    width: 100%;
+    font-family: var(--outfit);
+}
+
+.nutricao table caption {
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: var(--wenge-brown);
+    margin-bottom: 20px;
+}
+
+.nutricao table tr {
+    text-align: left;
+}
+
+.nutricao table tr:not(:last-child) {
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.nutricao table tr th {
+    font-weight: 400;
+    padding: 10px 30px;
+    font-size: 1.25rem;
+    color: var(--wenge-brown);
+}
+
+.nutricao table tr td {
+    font-size: 1.25rem;
+    padding: 10px 30px;
+    font-weight: 600;
+    color: var(--nutmeg);
 }
